@@ -1,0 +1,24 @@
+# Get the value of n from the user
+n = int(input("Enter the number of numbers you want to enter: "))
+
+# Initialize variables
+positive_count = 0
+negative_count = 0
+count = 0
+
+# Loop until the user has entered 'n' numbers
+while count < n:
+    number = float(input("Enter number {}: ".format(count + 1)))
+    if number > 0:
+        positive_count += 1
+    elif number < 0:
+        negative_count += 1
+    count += 1
+# Print the counts of positive and negative numbers
+print("Number of positive numbers entered:", positive_count)
+print("Number of negative numbers entered:", negative_count)
+This program prompts the user to enter the number of numbers they want to input ('n'). Then, it enters a while loop that iterates 'n' times. Inside the loop, it prompts the user to enter each number. Depending on whether the number is positive, negative, or zero, it increments the respective counters. Finally, it prints out the counts of positive and negative numbers entered.
+
+
+
+
