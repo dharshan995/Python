@@ -1,0 +1,12 @@
+arr = []
+n = int(input("Enter the number of elements: "))
+print("Enter the numbers (from 1 to n-1):")
+for i in range(n):
+    num = int(input())
+    arr.append(num)
+visited = set()
+for num in arr:
+    if num in visited:
+        print("Repetitive element:", num)
+        break
+    visited.add(num)
