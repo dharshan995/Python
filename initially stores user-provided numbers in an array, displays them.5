@@ -1,0 +1,18 @@
+numbers = []
+def display_numbers():
+    print("Numbers in the array:", numbers)
+def modify_array(insert_num, insert_index, delete_index):
+    numbers.insert(insert_index, insert_num)
+    del numbers[delete_index]
+if __name__ == "__main__":
+    n = int(input("Enter the number of elements: "))
+    print("Enter the numbers:")
+    for i in range(n):
+        num = int(input())
+        numbers.append(num)
+display_numbers()
+insert_num = int(input("Enter the number to insert: "))
+    insert_index = int(input("Enter the index to insert at: "))
+    delete_index = int(input("Enter the index to delete: "))
+modify_array(insert_num, insert_index, delete_index)
+display_numbers()
