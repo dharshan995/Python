@@ -1,0 +1,27 @@
+import math
+
+# Store user-provided numbers in an array
+numbers = []
+
+# Prompt the user to enter numbers
+n = int(input("Enter the number of elements: "))
+print("Enter the numbers:")
+for i in range(n):
+    num = float(input())
+    numbers.append(num)
+
+# Calculate the mean
+total_sum = sum(numbers)
+mean = total_sum / n
+
+# Calculate the variance
+sum_of_squares = sum((x - mean) ** 2 for x in numbers)
+variance = sum_of_squares / n
+
+# Calculate the deviation
+deviation = math.sqrt(variance)
+
+# Display the results
+print("Mean:", mean)
+print("Variance:", variance)
+print("Deviation:", deviation)
