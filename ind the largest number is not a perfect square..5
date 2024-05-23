@@ -1,0 +1,12 @@
+numbers = []
+n = int(input("Enter the number of integers: "))
+print("Enter the integers:")
+for i in range(n):
+    num = int(input())
+    numbers.append(num)
+largest_not_perfect_square = -1
+for num in numbers:
+    if num >= 0 and int(num ** 0.5) ** 2 != num:  # Check if the number is not a perfect square
+        if largest_not_perfect_square == -1 or num > largest_not_perfect_square:
+            largest_not_perfect_square = num
+print("Largest number that is not a perfect square:", largest_not_perfect_square)
