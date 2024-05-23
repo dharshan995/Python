@@ -1,0 +1,16 @@
+array1 = []
+n1 = int(input("Enter the number of elements for the first array: "))
+print("Enter the elements for the first array:")
+for i in range(n1):
+    num = int(input())
+    array1.append(num)
+array2 = []
+n2 = int(input("Enter the number of elements for the second array: "))
+print("Enter the elements for the second array:")
+for i in range(n2):
+    num = int(input())
+    array2.append(num)
+max_element_array1 = max(array1)
+min_element_array2 = min(array2)
+product = max_element_array1 * min_element_array2
+print("Product of max element of first array and min element of second array:", product)
