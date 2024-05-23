@@ -1,0 +1,14 @@
+numbers = []
+n = int(input("Enter the number of elements: "))
+print("Enter the elements:")
+for i in range(n):
+    num = int(input())
+    numbers.append(num)
+non_zero_index = 0
+for i in range(n):
+    if numbers[i] != 0:
+        numbers[non_zero_index] = numbers[i]
+        non_zero_index += 1
+for i in range(non_zero_index, n):
+    numbers[i] = 0
+print("Array after moving zeros to the end:", numbers)
