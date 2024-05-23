@@ -1,0 +1,11 @@
+numbers = []
+n = int(input("Enter the number of elements: "))
+print("Enter the numbers:")
+for i in range(n):
+    num = int(input())
+    numbers.append(num)
+unique_numbers = []
+for num in numbers:
+    if num not in unique_numbers:
+        unique_numbers.append(num)
+print("Unique values in the array:", unique_numbers)
