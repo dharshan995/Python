@@ -1,0 +1,25 @@
+array1 = []
+n = int(input("Enter the number of elements for array1: "))
+print("Enter the elements for array1:")
+for i in range(n):
+    num = int(input())
+    array1.append(num)
+array2 = []
+print("\nEnter the elements for array2:")
+for i in range(n):
+    num = int(input())
+    array2.append(num)
+are_same = True
+for i in range(n):
+    if array1[i] != array2[i]:
+        are_same = False
+        break
+if are_same:
+    print("\nThe arrays are the same.")
+else:
+    print("\nThe arrays are different.")
+
+
+
+
+
